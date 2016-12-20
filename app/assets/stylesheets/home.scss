@@ -1,3 +1,90 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+container {
+  background-color: black;
+}
+.banner-background{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  background-image: url("/images/wall.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  text-align: center;
+
+}
+.banner-poster{
+  size: 100%;
+  z-index: 2;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.poster{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;
+  margin: 0px auto;
+  width: 400px;
+}
+
+.nav-bar{
+  height:45px;
+  line-height: 35px;
+}
+.title{
+  font-size: 1.5em;
+}
+
+.nav-item{
+  height: 45px;
+  border: 2px red solid;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: white;
+  padding:5px;
+  // display: table-cell;
+  vertical-align: middle;
+  // float: none;
+}
+
+.video-side{
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  padding: 20px;
+  text-align: center;
+  border: 2px red solid;
+}
+
+.video-block {
+  background-color: black;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+  margin: 5px auto;
+
+  padding: 5px 0px 5px 0px;
+
+  img{
+    width: 80%;
+    border: 1px red solid;
+  }
+}
