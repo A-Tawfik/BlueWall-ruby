@@ -5,10 +5,10 @@ container {
   background-color: black;
 }
 .banner-background{
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 400px;
   background-image: url("/images/wall.jpg");
@@ -22,6 +22,7 @@ container {
   -ms-filter: blur(6px);
   filter: blur(6px);
   text-align: center;
+  border: 5px solid black;
 
 }
 .banner-poster{
@@ -56,9 +57,8 @@ container {
   font-family: 'Black Ops One', cursive;
   color: white;
   padding:5px;
-  // display: table-cell;
   vertical-align: middle;
-  // float: none;
+  background-color: black;
 }
 
 .video-side{
@@ -72,6 +72,8 @@ container {
   padding: 20px;
   text-align: center;
   border: 2px red solid;
+  max-height: 900px;
+  overflow-y: scroll;
 }
 
 .video-block {
@@ -87,4 +89,9 @@ container {
     width: 80%;
     border: 1px red solid;
   }
+}
+
+.content{
+  background: black;
+  height: 900px;
 }
