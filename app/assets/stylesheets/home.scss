@@ -11,19 +11,26 @@ container {
   z-index: 0;
   width: 100%;
   height: 400px;
-  background-image: url("/images/wall.jpg");
+  background-image: url("/images/banner.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: black;
 
-  -webkit-filter: blur(6px);
-  -moz-filter: blur(6px);
-  -o-filter: blur(6px);
-  -ms-filter: blur(6px);
-  filter: blur(6px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
   text-align: center;
   border: 5px solid black;
 
+}
+.banner-foreground{
+  background-color: dodgerblue;
+  opacity: .15;
+  width:100%;
+  height: inherit;
+  z-index:0;
 }
 .banner-poster{
   size: 100%;
@@ -31,6 +38,7 @@ container {
   height: 400px;
   text-align: center;
   overflow: hidden;
+
 }
 
 .poster{
@@ -40,6 +48,13 @@ container {
   top: 0%;
   margin: 0px auto;
   width: 400px;
+  box-shadow: 0px 0px 30px 10px #000;
+
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
 
 .nav-bar{
@@ -89,9 +104,33 @@ container {
     width: 80%;
     border: 1px red solid;
   }
+
+}
+
+.info-box{
+  display: none;
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 0;
+  background-color: azure;
+  z-index: 9999;
+  border-radius: 10px;
 }
 
 .content{
   background: black;
   height: 900px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .video-side {
+        display: none;
+    }
 }
