@@ -2,6 +2,16 @@
 // All this logic will automatically be available in application.js.
 $(function(){
 
+$("#get-test").click(function(){
+  $.ajax({
+    url: "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=oxZ-B6hmqgo&key=AIzaSyDgUaMVBoz1srC9Bi_sdkrqUCyWkpnfYwc",
+  }).done(function(response){
+    response.items[0].snippet.description
+    debugger;
+  });
+
+});
+
 
   $(".video-block")
     .mouseenter(function(){

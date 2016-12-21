@@ -1,9 +1,7 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-container {
-  background-color: black;
-}
+
 .banner-background{
   position: fixed;
   left: 0;
@@ -100,6 +98,10 @@ container {
 
   padding: 5px 0px 5px 0px;
 
+  .video-img{
+    width: 80%;
+    border: 1px red solid;
+  }
   img{
     width: 80%;
     border: 1px red solid;
