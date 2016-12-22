@@ -13,3 +13,6 @@ module BlueWall
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+# config.assets.paths << Rails.root.join('public', 'assets', 'fonts')
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
