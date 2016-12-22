@@ -15,4 +15,4 @@ module BlueWall
 end
 
 # config.assets.paths << Rails.root.join('public', 'assets', 'fonts')
-config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+# config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
